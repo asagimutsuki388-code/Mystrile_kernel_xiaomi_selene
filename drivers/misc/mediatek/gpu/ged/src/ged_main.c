@@ -47,7 +47,9 @@
 #include "ged_gpu_tuner.h"
 
 #define GED_DRIVER_DEVICE_NAME "ged"
-
+#ifdef GED_SKI_SUPPORT
+#include "ged_ski.h"
+#endif
 static GED_LOG_BUF_HANDLE ghLogBuf_GPU;
 
 #ifdef GED_DEBUG
